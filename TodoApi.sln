@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoApi", "TodoApi\TodoApi.csproj", "{4C51DD35-C36F-4EB0-B907-22C4D4226A41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cerebral", "Cerebral\Cerebral.csproj", "{1400B3FE-70EF-4CC4-9FB1-55567FDD31AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormExperiment", "WinFormExperiment\WinFormExperiment.csproj", "{C8CB3AA2-EFF4-4CDE-9499-6CC10A39E134}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAwaitExperiment", "AsyncAwaitExperiment\AsyncAwaitExperiment.csproj", "{D78AF5D8-EFDF-4FCE-8792-5AF20FD2288D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternExperiment", "DesignPatternExperiment\DesignPatternExperiment.csproj", "{A13D5EC6-AAB6-424D-9A9E-C0022A3ADAE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqExperiment", "LinqExperiment\LinqExperiment.csproj", "{670D1960-D00F-43B8-A751-B16CA40700FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTask", "ThreadTask\ThreadTask.csproj", "{0CF801CA-FF9F-4AF2-97CF-923755117BEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C51DD35-C36F-4EB0-B907-22C4D4226A41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C51DD35-C36F-4EB0-B907-22C4D4226A41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C51DD35-C36F-4EB0-B907-22C4D4226A41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C51DD35-C36F-4EB0-B907-22C4D4226A41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1400B3FE-70EF-4CC4-9FB1-55567FDD31AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1400B3FE-70EF-4CC4-9FB1-55567FDD31AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1400B3FE-70EF-4CC4-9FB1-55567FDD31AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1400B3FE-70EF-4CC4-9FB1-55567FDD31AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8CB3AA2-EFF4-4CDE-9499-6CC10A39E134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8CB3AA2-EFF4-4CDE-9499-6CC10A39E134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8CB3AA2-EFF4-4CDE-9499-6CC10A39E134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8CB3AA2-EFF4-4CDE-9499-6CC10A39E134}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D78AF5D8-EFDF-4FCE-8792-5AF20FD2288D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D78AF5D8-EFDF-4FCE-8792-5AF20FD2288D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D78AF5D8-EFDF-4FCE-8792-5AF20FD2288D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D78AF5D8-EFDF-4FCE-8792-5AF20FD2288D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A13D5EC6-AAB6-424D-9A9E-C0022A3ADAE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A13D5EC6-AAB6-424D-9A9E-C0022A3ADAE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A13D5EC6-AAB6-424D-9A9E-C0022A3ADAE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A13D5EC6-AAB6-424D-9A9E-C0022A3ADAE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{670D1960-D00F-43B8-A751-B16CA40700FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{670D1960-D00F-43B8-A751-B16CA40700FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{670D1960-D00F-43B8-A751-B16CA40700FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{670D1960-D00F-43B8-A751-B16CA40700FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CF801CA-FF9F-4AF2-97CF-923755117BEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CF801CA-FF9F-4AF2-97CF-923755117BEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CF801CA-FF9F-4AF2-97CF-923755117BEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CF801CA-FF9F-4AF2-97CF-923755117BEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
