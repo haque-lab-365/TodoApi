@@ -31,10 +31,18 @@ Example: Extracting data from multiple files, transforming them independently, a
 Used in research or engineering projects where different computations can run simultaneously.  
 **Example:** Evaluating different sections of a physics simulation or image processing pipeline in computer vision.
 
+### ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png) `Parallelizing AI/ML Preprocessing`
+When preparing data for AI/ML tasks, multiple operations like cleaning, augmentation, and encoding can happen concurrently.  
+**Example:** Performing data normalization, feature extraction, and encoding on separate datasets simultaneously.
 
-- ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `Red item`
-- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) `Green Item`
-- ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png) `Blue Item`
+### ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png) `Computation-Intensive Game Development`
+Running multiple logic updates concurrently in gaming loops or simulations.  
+**Example:** Running AI behavior for different NPCs, calculating physics for various objects, and updating game state at the same time.
+
+### Key Considerations:
+- Ensure tasks are independent and thread-safe.
+- Monitor and handle exceptions aggregated by Parallel.Invoke.
+- Use it for **CPU-bound tasks** rather than **I/O-bound tasks**, which are better suited for asynchronous programming.
   
 @Shahid :+1: This item looks great - it's ready to go! :shipit:
 
@@ -53,3 +61,7 @@ Used in research or engineering projects where different computations can run si
 
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
+
+- ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `Red item`
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) `Green Item`
+- ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png) `Blue Item`
