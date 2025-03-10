@@ -1,5 +1,14 @@
 # TodoApi - A .NET INSTRUMENTAL EXPERIMENT PROJECT
 
+| Project | Description | .NET FW Version
+| --- | --- | --- |
+| AsyncAwaitExperiment | Experiment on Asnycrhonous programming | 8.0 |
+| DesignPatternExperiment | Application differetn design pattern in C#.net | 8.0 |
+| DesignPatternExperiment | Application differetn design pattern in C#.net | 8.0 |
+| LinqExperiment | Linq - a easiest way to access data | 8.0 |
+
+
+
 What are practical scenarios where Parallel.Invoke is best used?
 
 ## Parallel.Invoke Use Cases
