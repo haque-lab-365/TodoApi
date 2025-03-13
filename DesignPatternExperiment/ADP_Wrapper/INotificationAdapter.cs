@@ -10,13 +10,17 @@ namespace DesignPatternExperiment.ADP_Wrapper
     public class User 
     {
         public bool AllowEmailNotifications { get; set;}
-        public string EmailAddres { get; set;}
+        public string? EmailAddress { get; set;}
 
     }
-    public class Message { }
+    public class Message 
+    { 
+        public string? Title { get; set; }
+        public string? Details { get; set; }
+    }
     public class EmailSettings 
     { 
-        public string DefaultFromAddress { get; set;}
+        public string? DefaultFromAddress { get; set;}
     }
 
 
@@ -52,9 +56,9 @@ namespace DesignPatternExperiment.ADP_Wrapper
         {
             if (!user.AllowEmailNotifications) return;
 
-            string fromEmail = _settings.DefaultFromAddress;
+            string? fromEmail = _settings.DefaultFromAddress;
 
-            _emailSender.SendEmail(user.EmailAddress, fromEmail, message.Title, message.Details);
+           //_emailSender.SendEmail(user.EmailAddress, fromEmail, message.Title, message.Details);
         }
     }
 }

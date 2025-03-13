@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using ThreadTask.TaskExperiment;
 
-Console.WriteLine("Welcome to the task world!");
+//Console.WriteLine("Welcome to the task world!");
 
 //--await Tasker.DoTasks();
 
@@ -12,6 +12,5 @@ Console.WriteLine("Welcome to the task world!");
 //--ParallelInvokeDemo.ExecuteParallelInvoke();
 
 MultipleParallelInvokeDemo.ExecuteMultipleParallelInvoke();
-
-Console.ReadLine();
+//Console.ReadLine();
 

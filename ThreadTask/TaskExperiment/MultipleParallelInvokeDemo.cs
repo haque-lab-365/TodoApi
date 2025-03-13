@@ -125,4 +125,38 @@ namespace ThreadTask.TaskExperiment
 
         }
     }
+
+    //--Parallel.Invoke does not wait for async methods to complete
+    //--https://stackoverflow.com/questions/24306620/parallel-invoke-does-not-wait-for-async-methods-to-complete
+
+    /*  A COMPLETE BAD APPROACH  
+     
+    spinner.IsBusy = true;
+
+     Parallel.Invoke(
+        async () => dataX = await Task.Run(() => { return loadX(); }),
+        async () => dataY = await Task.Run(() => { return loadY(); }),
+        async () => dataZ = await Task.Run(() => { return loadZ(); })
+     );
+
+    spinner.isBusy = false;
+    ------------------------------------- + ----------------------------------
+    //-- A COMPLETE GOOD APPROACH
+    spinner.IsBusy = true;
+    try
+    {
+        Task t1 = Task.Run(() => dataX = loadX());
+        Task t2 = Task.Run(() => dataY = loadY());
+        Task t3 = Task.Run(() => dataZ = loadZ());
+
+        await Task.WhenAll(t1, t2, t3);
+    }
+    finally
+    {
+        spinner.IsBusy = false;
+    }
+
+    //--Give a deep dive on this.
+    //--https://learn.microsoft.com/en-us/archive/blogs/benwilli/tasks-are-still-not-threads-and-async-is-not-parallel
+    */
 }

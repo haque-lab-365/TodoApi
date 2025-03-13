@@ -17,6 +17,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqExperiment", "LinqExper
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTask", "ThreadTask\ThreadTask.csproj", "{0CF801CA-FF9F-4AF2-97CF-923755117BEC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPLDataStructure", "TPLDataStructure\TPLDataStructure.csproj", "{BE7DFAB3-299D-4505-8FE1-3374EBD6A8AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActionDelegates", "ActionDelegates\ActionDelegates.csproj", "{60699E72-7F38-4444-9545-F5BB814886A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0AF96BB6-3E07-4CCD-979B-BB228C686DAE}"
+	ProjectSection(SolutionItems) = preProject
+		Resources\Topics.docx = Resources\Topics.docx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +60,14 @@ Global
 		{0CF801CA-FF9F-4AF2-97CF-923755117BEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CF801CA-FF9F-4AF2-97CF-923755117BEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CF801CA-FF9F-4AF2-97CF-923755117BEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE7DFAB3-299D-4505-8FE1-3374EBD6A8AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE7DFAB3-299D-4505-8FE1-3374EBD6A8AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE7DFAB3-299D-4505-8FE1-3374EBD6A8AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE7DFAB3-299D-4505-8FE1-3374EBD6A8AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60699E72-7F38-4444-9545-F5BB814886A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60699E72-7F38-4444-9545-F5BB814886A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60699E72-7F38-4444-9545-F5BB814886A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60699E72-7F38-4444-9545-F5BB814886A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
