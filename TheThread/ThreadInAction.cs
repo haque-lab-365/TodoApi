@@ -37,7 +37,16 @@ namespace TheThread
             validateFileThread.Join();
             calculateChecksumThread.Join();
 
-            Console.WriteLine("All threads have completed their tasks.");   
+            Console.WriteLine("All threads have completed their tasks.");
+
+            //--Get the current logical processor. | We begin with the simplest way, to retrieve the amount of logical processors:
+            var cpuCount = Environment.ProcessorCount;
+            Console.WriteLine($"Number of processors: {cpuCount}");
+
+            var threadsNo = System.Diagnostics.Process.GetCurrentProcess().Threads;
+            //--Of course this includes unmanaged threads as well.
+
+
 
 
         }

@@ -1,0 +1,6 @@
+﻿ProcessThread.IdealProcessor Property
+https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.process.refresh?view=net-9.0#system-diagnostics-process-refresh
+
+https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.process?view=net-9.0
+https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.processthread?view=net-9.0
+https://www.csharp.com/UploadFile/1d42da/process-and-thread-basics/

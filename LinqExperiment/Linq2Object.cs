@@ -9,6 +9,8 @@ namespace LinqExperiment
 {
     public class Linq2Object
     {
+
+
         public void QueryInMemory()
         {
 
@@ -41,6 +43,12 @@ namespace LinqExperiment
             {
                 Console.WriteLine(length);
             }
+        }
+
+        public void QuerySyntax()
+        {
+            //--List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
         }
     }
 }

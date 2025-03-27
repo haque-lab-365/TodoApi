@@ -9,7 +9,7 @@ namespace ThreadTask.TaskExperiment
         class ParallelInvoke
         {
         //--https://learn.microsoft.com/en-us/dotnet/standard/parallel-programming/how-to-use-parallel-invoke-to-execute-parallel-operations
-        static void Main()
+        public static void Main()
             {
                 // Retrieve Goncharov's "Oblomov" from Gutenberg.org.
                 string[] words = CreateWordArray(@"http://www.gutenberg.org/files/54700/54700-0.txt");

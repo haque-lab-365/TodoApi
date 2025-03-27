@@ -28,6 +28,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheThread", "TheThread\TheThread.csproj", "{940447A2-CA3E-4F93-A3D1-8FD90AC3A150}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheProcessMaster", "TheProcessMaster\TheProcessMaster.csproj", "{1D4B9909-1B5D-4BB3-81AB-E7CFE34EB6EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSafeCollections", "ThreadSafeCollections\ThreadSafeCollections.csproj", "{4AA874B2-690A-4002-8E74-95EDDB4AFE88}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +78,14 @@ Global
 		{940447A2-CA3E-4F93-A3D1-8FD90AC3A150}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{940447A2-CA3E-4F93-A3D1-8FD90AC3A150}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{940447A2-CA3E-4F93-A3D1-8FD90AC3A150}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D4B9909-1B5D-4BB3-81AB-E7CFE34EB6EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D4B9909-1B5D-4BB3-81AB-E7CFE34EB6EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D4B9909-1B5D-4BB3-81AB-E7CFE34EB6EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D4B9909-1B5D-4BB3-81AB-E7CFE34EB6EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AA874B2-690A-4002-8E74-95EDDB4AFE88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AA874B2-690A-4002-8E74-95EDDB4AFE88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AA874B2-690A-4002-8E74-95EDDB4AFE88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AA874B2-690A-4002-8E74-95EDDB4AFE88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 namespace ThreadTask.TaskExperiment
 {
     //--https://learn.microsoft.com/en-us/dotnet/standard/parallel-programming/task-based-asynchronous-programming
-    
+    //--How to handle exceptions in Parallel.Invoke: https://learn.microsoft.com/en-us/dotnet/standard/parallel-programming/exception-handling-parallel-invoke
+    //--How to handle exceptions in tasks: https://learn.microsoft.com/en-us/dotnet/standard/parallel-programming/exception-handling-task-parallel-library
+
     public class TaskBasedAsyncPro
     {
 
@@ -17,7 +19,6 @@ namespace ThreadTask.TaskExperiment
         //--Creating and running Tasks implicitly
         public void CreateAndRunTaskImlicitly() {
             Parallel.Invoke(() => DoSomeWork(), () => DoSomeOtherWork(), () => DoSomeMath(100));
-
         }
 
         //--The number of Task instances that are created behind the scenes by Invoke isn't necessarily equal to the number of delegates that are provided. The TPL might employ various optimizations, especially with large numbers of delegates.
