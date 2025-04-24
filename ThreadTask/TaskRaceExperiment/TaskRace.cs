@@ -36,6 +36,37 @@ namespace ThreadTask.TaskRaceExperiment
             t10.Start();
             Task.WaitAll(t1, t2, t3, t4, t5, t6, t7, t8, t9, t10);
         }
+        /// <summary>
+        /// We can use delegagte method inside the invoke if we don't have to depend on any results.
+        /// </summary>
+        public void InvokeDifferently()
+        {
+            Parallel.Invoke(
+                
+                delegate ()
+                {
+                    Console.WriteLine("All is well - Going to collect 30 rows");
+                    Console.WriteLine($"The tick is {DateTime.Now.Ticks}");
+                    Thread.Sleep(1000);
+                },
+
+                delegate ()
+                {
+                    Console.WriteLine("All is well - Going to collect 50K rows");
+                    Console.WriteLine($"The tick is {DateTime.Now.Ticks}");
+                    Thread.Sleep(1000);
+                },
+
+                delegate ()
+                {
+                    Console.WriteLine("All is well - Going to collect 60K rows");
+                    Console.WriteLine($"The tick is {DateTime.Now.Ticks}");
+                    Thread.Sleep(1000);
+                }
+            ); 
+        
+        
+        }
         public static async Task RaceTask()
         { 
            Task task1 = Task.Run(() => IncrementCounter1());

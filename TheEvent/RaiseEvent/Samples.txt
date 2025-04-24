@@ -1,0 +1,82 @@
+﻿Let’s consider a project where you're building a basic notification system for file uploads. 
+The system notifies subscribed components whenever a file is successfully uploaded
+
+Code Example: EventHandler in Action:
+using System;
+
+namespace RealWorldEventHandlerExample
+{
+    // Define a custom EventArgs class to pass additional data
+    public class FileUploadedEventArgs : EventArgs
+    {
+        public string FileName { get; }
+        public DateTime UploadTime { get; }
+
+        public FileUploadedEventArgs(string fileName, DateTime uploadTime)
+        {
+            FileName = fileName;
+            UploadTime = uploadTime;
+        }
+    }
+
+    // Publisher class (responsible for raising the event)
+    public class FileUploader
+    {
+        // Declare the event using EventHandler
+        public event EventHandler<FileUploadedEventArgs> FileUploaded;
+
+        // Method to simulate file upload
+        public void UploadFile(string fileName)
+        {
+            Console.WriteLine($"Uploading file: {fileName}");
+            // Simulate some work
+            System.Threading.Thread.Sleep(1000);
+
+            // Raise the event after the file is "uploaded"
+            OnFileUploaded(new FileUploadedEventArgs(fileName, DateTime.Now));
+        }
+
+        // Method to raise the event
+        protected virtual void OnFileUploaded(FileUploadedEventArgs e)
+        {
+            FileUploaded?.Invoke(this, e);
+        }
+    }
+
+    // Subscriber class (listens to the event)
+    public class NotificationService
+    {
+        public void OnFileUploaded(object sender, FileUploadedEventArgs e)
+        {
+            Console.WriteLine($"Notification: File '{e.FileName}' uploaded at {e.UploadTime}");
+        }
+    }
+
+    //--Program class to demonstrate the EventHandler
+    class Program
+    {
+        static void Main()
+        {
+            var fileUploader = new FileUploader();
+            var notificationService = new NotificationService();
+
+            // Subscribe to the event
+            fileUploader.FileUploaded += notificationService.OnFileUploaded;
+
+            // Simulate file uploads
+            fileUploader.UploadFile("Report.pdf");
+            fileUploader.UploadFile("Photo.jpg");
+        }
+    }
+}
+
+Explanation of the Code:
+Custom EventArgs (FileUploadedEventArgs):
+Contains additional information (e.g., file name and upload time) to pass to event subscribers.
+Publisher Class (FileUploader):
+Declares the FileUploaded event using EventHandler<FileUploadedEventArgs>.
+Raises the event via the OnFileUploaded method.
+Subscriber Class (NotificationService):
+Subscribes to the FileUploaded event and handles it in the OnFileUploaded method.
+Usage in Main:
+The FileUploader raises an event whenever a file is uploaded, and the NotificationService responds to the event by displaying a notification.

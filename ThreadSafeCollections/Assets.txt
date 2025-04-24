@@ -1,0 +1,284 @@
+﻿TryDequeue tries to remove an element from the queue. 
+If the method is successful, the item is removed and the method returns true; otherwise, it returns false. 
+That happens atomically with respect to other operations on the queue. 
+If the queue was populated with code such as q.Enqueue("a"); q.Enqueue("b"); q.Enqueue("c"); and 
+two threads concurrently try to dequeue an element, one thread will dequeue a and the other thread will dequeue b. 
+Both calls to TryDequeue will return true, because they were both able to dequeue an element. 
+If each thread goes back to dequeue an additional element, one of the threads will dequeue c and return true, 
+whereas the other thread will find the queue empty and will return false.
+
+
+using System;
+using System.Collections.Concurrent;
+using System.Threading;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        //--Initialize a ConcurrentQueue and populate it
+        var queue = new ConcurrentQueue<string>();
+        queue.Enqueue("a");
+        queue.Enqueue("b");
+        queue.Enqueue("c");
+
+        // Define the action for dequeuing in threads
+        void DequeueElements(string threadName)
+        {
+            for (int i = 0; i < 2; i++) // Try to dequeue twice
+            {
+                if (queue.TryDequeue(out string item))
+                {
+                    Console.WriteLine($"{threadName} dequeued: {item}");
+                }
+                else
+                {
+                    Console.WriteLine($"{threadName} found the queue empty.");
+                }
+                Thread.Sleep(100); // Simulate some work
+            }
+        }
+
+        // Create and start two threads
+        var thread1 = new Thread(() => DequeueElements("Thread 1"));
+        var thread2 = new Thread(() => DequeueElements("Thread 2"));
+
+        thread1.Start();
+        thread2.Start();
+
+        // Wait for threads to complete
+        thread1.Join();
+        thread2.Join();
+
+        Console.WriteLine("Experiment completed.");
+    }
+}
+
+
+Explanation:
+The ConcurrentQueue<T> class is used for thread-safe operations.
+Two threads (Thread 1 and Thread 2) attempt to dequeue elements concurrently.
+The TryDequeue method removes an element atomically and returns true if successful, or false if the queue is empty.
+The output will show which thread dequeued which element, and which thread encountered an empty queue.
+Run this code to observe how the threads interact with the queue. 
+You can tweak the Thread.Sleep value or the number of dequeue attempts to experiment further. 
+
+[1] This example shows multiple threads adding items to a shared collection (ConcurrentBag) safely.
+
+using System;
+using System.Collections.Concurrent;
+using System.Threading;
+
+class Program
+{
+    static void Main()
+    {
+        var bag = new ConcurrentBag<int>();
+
+        void AddItems(string threadName)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                bag.Add(i);
+                Console.WriteLine($"{threadName} added: {i}");
+                Thread.Sleep(50); // Simulate work
+            }
+        }
+
+        var thread1 = new Thread(() => AddItems("Thread 1"));
+        var thread2 = new Thread(() => AddItems("Thread 2"));
+
+        thread1.Start();
+        thread2.Start();
+
+        thread1.Join();
+        thread2.Join();
+
+        Console.WriteLine("Final bag contents: " + string.Join(", ", bag));
+    }
+}
+
+
+2. Race Condition Demonstration
+This example demonstrates a race condition and how thread synchronization using a lock prevents unexpected results.
+
+using System;
+using System.Threading;
+
+class Program
+{
+    private static int sharedCounter = 0;
+    private static readonly object lockObj = new object();
+
+    static void Main()
+    {
+        void IncrementCounterWithoutLock()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                sharedCounter++;
+                Console.WriteLine($"Without Lock: {sharedCounter}");
+                Thread.Sleep(50);
+            }
+        }
+
+        void IncrementCounterWithLock()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                lock (lockObj)
+                {
+                    sharedCounter++;
+                    Console.WriteLine($"With Lock: {sharedCounter}");
+                }
+                Thread.Sleep(50);
+            }
+        }
+
+        var thread1 = new Thread(IncrementCounterWithoutLock);
+        var thread2 = new Thread(IncrementCounterWithLock);
+
+        thread1.Start();
+        thread2.Start();
+
+        thread1.Join();
+        thread2.Join();
+
+        Console.WriteLine($"Final counter value: {sharedCounter}");
+    }
+}
+
+3. Producer-Consumer Pattern Using BlockingCollection
+//--This example demonstrates how threads interact in a producer-consumer model.
+
+using System;
+using System.Collections.Concurrent;
+using System.Threading;
+
+class Program
+{
+    static void Main()
+    {
+        var queue = new BlockingCollection<int>();
+
+        // Producer thread
+        void Producer()
+        {
+            for (int i = 1; i <= 5; i++)
+            {
+                queue.Add(i);
+                Console.WriteLine($"Produced: {i}");
+                Thread.Sleep(100); // Simulate work
+            }
+            queue.CompleteAdding();
+        }
+
+        // Consumer thread
+        void Consumer()
+        {
+            foreach (var item in queue.GetConsumingEnumerable())
+            {
+                Console.WriteLine($"Consumed: {item}");
+                Thread.Sleep(150); // Simulate work
+            }
+        }
+
+        var producerThread = new Thread(Producer);
+        var consumerThread = new Thread(Consumer);
+
+        producerThread.Start();
+        consumerThread.Start();
+
+        producerThread.Join();
+        consumerThread.Join();
+
+        Console.WriteLine("Producer-Consumer experiment completed.");
+    }
+}
+
+4. Thread Priority Experiment
+This example demonstrates the effect of thread priority on execution.
+
+using System;
+using System.Threading;
+
+class Program
+{
+    static void Main()
+    {
+        void PrintNumbers(string threadName)
+        {
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine($"{threadName}: {i}");
+                Thread.Sleep(50);
+            }
+        }
+
+        var highPriorityThread = new Thread(() => PrintNumbers("High Priority"));
+        var lowPriorityThread = new Thread(() => PrintNumbers("Low Priority"));
+
+        highPriorityThread.Priority = ThreadPriority.Highest;
+        lowPriorityThread.Priority = ThreadPriority.Lowest;
+
+        highPriorityThread.Start();
+        lowPriorityThread.Start();
+
+        highPriorityThread.Join();
+        lowPriorityThread.Join();
+
+        Console.WriteLine("Thread priority experiment completed.");
+    }
+}
+
+5. Deadlock Demonstration
+This example illustrates a deadlock scenario and emphasizes why care is needed when synchronizing threads.
+
+using System;
+using System.Threading;
+
+class Program
+{
+    private static readonly object lock1 = new object();
+    private static readonly object lock2 = new object();
+
+    static void Main()
+    {
+        void Thread1()
+        {
+            lock (lock1)
+            {
+                Console.WriteLine("Thread 1 acquired lock1");
+                Thread.Sleep(100);
+                lock (lock2)
+                {
+                    Console.WriteLine("Thread 1 acquired lock2");
+                }
+            }
+        }
+
+        void Thread2()
+        {
+            lock (lock2)
+            {
+                Console.WriteLine("Thread 2 acquired lock2");
+                Thread.Sleep(100);
+                lock (lock1)
+                {
+                    Console.WriteLine("Thread 2 acquired lock1");
+                }
+            }
+        }
+
+        var thread1 = new Thread(Thread1);
+        var thread2 = new Thread(Thread2);
+
+        thread1.Start();
+        thread2.Start();
+
+        thread1.Join();
+        thread2.Join();
+
+        Console.WriteLine("Deadlock demonstration (if no deadlock, this text is shown).");
+    }
+}

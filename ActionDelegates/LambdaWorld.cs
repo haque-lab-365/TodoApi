@@ -15,7 +15,10 @@ namespace ActionDelegates
             //-- (input - parameters) => expression
             //--The body of an expression lambda can consist of a method call
             Action line = () => Console.WriteLine("Bare minimum syntax!");
+            line();
 
         }
+
+
     }
 }
