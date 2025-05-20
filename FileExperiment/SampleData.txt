@@ -1,0 +1,104 @@
+﻿
+Obscure - Recondite topic.
+Obscure - Not clear or plain; ambiguous, vague, or uncertain.
+Relieved - Mitigated or lessened.
+Relieved - To free from a burden, evil, or distress.
+Relieved - To ease or alleviate (pain, anxiety, etc.).
+Implied - Initimated or suggested without being directly stated.
+Implied - To indicate or suggest without being explicitly stated.
+Implied - To involve or suggest by logical necessity.
+Implied - To express indirectly; to hint at or suggest.
+Calm  - Placidity; tranquility; serenity.
+Calm  - Not showing or feeling nervousness, anger, or other emotions.
+Calm  - To make quiet or still; to pacify.
+Calm  - To soothe or comfort; to relieve from agitation or excitement.
+Serene - Calm, peaceful, or tranquil setting
+Serene - Clear and free of storms or unpleasant change.
+Adors - To worship or honor as divine.
+Adors - To regard with deep, often rapturous love.
+Adors - To be very fond of; to like or love intensely, cherish.
+Long-winded - Using or containing too many words; verbose.
+Long-winded - Tediously protracted; long-lasting.
+Long-winded - Extended to a tedious length; verbose. A garrulous king
+Revitalized - To give new life or vigor to; to animate or restore.
+Revitalized - To impart new vitality or vigor to; to re-energize.
+Revitalized - To give new life or vitality to; to renew. Invigorated.
+Thorough - Complete in all respects; not superficial or partial.
+Thorough - Carried out to completion; exhaustive. Detailed, scrupuulous.
+Thorough - Marked by full detail; not superficial or partial.
+Caused - Precipiated
+Caused - Brought about; produced as an effect.
+Caused - To make happen; to bring about.
+Caused - To be the cause of; to bring about.
+Outmoded - Obsolete product.
+Outmoded - No longer in fashion; out of date.
+Outmoded - No longer in style or use; outdated.
+Outmoded - No longer fashionable; out of date.
+Perplexing - Opaque book.
+Perplexing - Confusing; puzzling.
+Perplexing - Difficult to understand; baffling.
+Perplexing - To confuse or bewilder; to make complicated or involved.
+Perplexing - To make unable to grasp something clearly or to think logically and decisively about something.
+Acclaim - Approbation
+Acclaim - Enthusiastic approval; applause.	
+Acclaim - To praise enthusiastically and publicly.
+Acclaim - To announce or proclaim with enthusiastic approval.
+Provocative - Incendiary | Incendiary - Tending to arouse strife, sedition, or rebellion; inflammatory.
+Provocative - Causing or tending to cause a strong reaction, especially deliberately.
+Provocative - Causing annoyance, anger, or another strong reaction, especially deliberately.
+Provocative - Causing sexual desire or excitement.
+Hostile - Polemeic | Polemic - A controversial argument or dispute.
+Hostile - Of or relating to a polemic; controversial.Hostile Speech.
+Hostile - Of or relating to an enemy; antagonistic.
+Hostile - Unfriendly; antagonistic.
+Contrasting - Disparate thoughts.
+Contrasting - Differing; disagreeing.
+Contrasting - Distinct; different.
+Insigt - Profundiy | Profound - Having deep insight or understanding.
+Profound - Having intellectual depth and insight.
+Profound - Requiring deep thought or knowledge.
+Profound - Of deep meaning; of great and broadly inclusive significance.
+Exhausted - Envervated | Enervated - Lacking physical, mental, or moral vigor; exhausted.
+Enervated - Lacking energy or vitality; weakened.
+Enthusiastic - Fervid | Fervid - Intensely emotional; feverish.	
+Fervid - Marked by great passion or zeal; extremely hot.	
+Fervid - Burning; glowing; intensely hot.	
+Fervid - Characterized by intense emotion; zealous.
+Replicate - Emulate		Replicate - To make an exact copy of; reproduce.
+Replicate - To duplicate or reproduce, especially for experimental purposes.
+Replicate - To reproduce or copy, especially in a laboratory setting.
+Replicate - To reproduce or copy, especially in a laboratory setting.
+Declined - Abstained | Abstain - To refrain from something by one's choice.	
+Abstain - To choose not to do something.
+Abstain - To refrain from voting.
+Abstain - To refrain from indulging an appetite or desire.
+Abstain - To refrain from something by one's choice.
+Wise - Prudent | Prudent - Exercising good judgment or common sense.
+Prudent - Careful in providing for the future; providing for the future.
+Prudent - Marked by wisdom or judiciousness; sensible.
+Prudent - Careful in providing for the future; providing for the future.
+Far-Seeing - Prophetic | Prophetic - Foretelling events as if by supernatural intervention.
+Far-Seeing - Foretelling events as if by supernatural intervention.	
+Prophetic - Of or relating to a prophet or prophecy.
+Transitory - Ephemeral | Ephemeral - Lasting a very short time; short-lived.
+Ephemeral - Lasting only a brief time; short-lived.
+Ephemeral - Lasting a very short time; fleeting.
+Ephemeral - Lasting a very short time; short-lived.
+Meticulous - Punctilous | Punctilious - Strictly attentive to minute details; precise.
+Punctilious - Marked by precise accordance with the details of codes or conventions.
+Punctilious - Strictly attentive to minute details; precise.
+Punctilious - Marked by precise accordance with the details of codes or conventions.
+Punctilious - Strictly attentive to minute details; precise.
+Perfectionist - Pedant
+Pedant - A person who is excessively concerned with minor details and rules or with displaying academic learning.
+Standard - Paradigmatic | Paradigmatic - Serving as a typical example or pattern; exemplary.
+Paradigmatic - Serving as a typical example or pattern; exemplary.
+Paradigmatic - Serving as a model or example; typical.
+Paradigmatic - Serving as a model or example; typical.
+Wavers - Vacillates | Vacillate - To sway unsteadily; to waver or hesitate in choice of actions or opinions.
+Vacillate - To sway unsteadily; to waver or hesitate in choice of actions or opinions.
+Vacillate - To waver in mind, will, or feeling; hesitate in choice of opinions or courses.
+Vacillate - To sway unsteadily; to waver or hesitate in choice of actions or opinions.
+Verified - Corroborated | Corroborate - To confirm or give support to a statement, theory, or finding.
+Corroborate - To confirm or give support to a statement, theory, or finding.
+
