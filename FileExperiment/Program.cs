@@ -11,7 +11,7 @@ Console.WriteLine("Hello, World!");
 
 //--string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "SampleData.txt");
 
-string? currentDirectory = Directory.GetCurrentDirectory();
+string currentDirectory = Directory.GetCurrentDirectory();
 string? parentDirectory = Directory.GetParent(currentDirectory)?.Parent?.Parent?.FullName;
 
 if (parentDirectory == null)
