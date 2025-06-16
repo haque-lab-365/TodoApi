@@ -38,6 +38,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheEvent", "TheEvent\TheEve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileExperiment", "FileExperiment\FileExperiment.csproj", "{9A5FDC1C-4669-410B-A7C6-546070B0366A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiscExperiment", "MiscExperiment\MiscExperiment.csproj", "{349D877B-1506-4FCD-AB2C-706357A9DBBB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -104,6 +106,10 @@ Global
 		{9A5FDC1C-4669-410B-A7C6-546070B0366A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A5FDC1C-4669-410B-A7C6-546070B0366A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A5FDC1C-4669-410B-A7C6-546070B0366A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{349D877B-1506-4FCD-AB2C-706357A9DBBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{349D877B-1506-4FCD-AB2C-706357A9DBBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{349D877B-1506-4FCD-AB2C-706357A9DBBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{349D877B-1506-4FCD-AB2C-706357A9DBBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

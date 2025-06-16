@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //--https://learn.microsoft.com/en-us/dotnet/fundamentals/runtime-libraries/system-threading-tasks-task
 using System;
+using ThreadTask.ParallelAsync;
 using ThreadTask.TaskExperiment;
 using ThreadTask.TaskRaceExperiment;
 
@@ -17,7 +18,9 @@ using ThreadTask.TaskRaceExperiment;
 //--MultipleParallelInvokeDemo.ExecuteMultipleParallelInvoke();
 
 //--TaskRace.BunchofTasks();
-await TaskRace.RaceTask();
+//--await TaskRace.RaceTask();
+
+ParallelAsyncExperiment.DoExperiment().GetAwaiter().GetResult();    
 
 Console.ReadLine();
 
