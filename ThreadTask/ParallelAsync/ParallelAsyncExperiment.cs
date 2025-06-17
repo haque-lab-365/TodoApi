@@ -82,5 +82,15 @@ namespace ThreadTask.ParallelAsync
             Console.WriteLine("Parallel Async Experiment completed.");
         }
 
+        public static void JudgeMyCode(string code, string level, string idea)
+        {
+            ArgumentNullException.ThrowIfNull(code, nameof(code));
+            ArgumentNullException.ThrowIfNull(level, nameof(level));
+            ArgumentNullException.ThrowIfNull(idea, nameof(idea));
+
+            Console.WriteLine($"Code: {code}\nLevel: {level}\nIdea: {idea}");   
+
+        }
+
     }
 }
