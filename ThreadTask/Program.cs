@@ -2,6 +2,7 @@
 //--https://learn.microsoft.com/en-us/dotnet/fundamentals/runtime-libraries/system-threading-tasks-task
 using System;
 using ThreadTask.ParallelAsync;
+using ThreadTask.ParallelFor;
 using ThreadTask.TaskExperiment;
 using ThreadTask.TaskRaceExperiment;
 
@@ -20,7 +21,9 @@ using ThreadTask.TaskRaceExperiment;
 //--TaskRace.BunchofTasks();
 //--await TaskRace.RaceTask();
 
-ParallelAsyncExperiment.DoExperiment().GetAwaiter().GetResult();    
+//--ParallelAsyncExperiment.DoExperiment().GetAwaiter().GetResult();    
+
+ParallelForExperiment.ParallelFor();
 
 Console.ReadLine();
 

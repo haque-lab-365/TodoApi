@@ -14,7 +14,28 @@ namespace ThreadTask.ParallelFor
     public class ParallelForExperiment
     {
 
+        static int N = 20;
 
+        public static void ParallelFor()
+        {
+            //--Use a name method with Parallel.For.
+            Parallel.For(0, N, DoWork);
+            
+            //-- Using an anonymous method.
+            Parallel.For(0, N, delegate (int i)
+            {
+                // Do Work.
+                Console.WriteLine($"Anonymous Method Call: The math is simple {i * i}, Managed thread ID: {Thread.CurrentThread.ManagedThreadId} ");
+            });
+
+            // Using a lambda expression.
+            Parallel.For(0, N, i =>
+            {
+                // Do Work.
+                Console.WriteLine($"Lambda expression call: The math is simple {i * i}, Managed thread ID: {Thread.CurrentThread.ManagedThreadId} ");
+            });
+
+        }
         public static void ParalleForInAction()
         {
 
@@ -145,6 +166,11 @@ namespace ThreadTask.ParallelFor
                 total += i;
             }
             return total;
+        }
+
+        static void DoWork(int i)
+        {
+            Console.WriteLine($"The math is simple {i * i}, Managed thread ID: {Thread.CurrentThread.ManagedThreadId} ");
         }
     }
 }
