@@ -23,7 +23,10 @@ using ThreadTask.TaskRaceExperiment;
 
 //--ParallelAsyncExperiment.DoExperiment().GetAwaiter().GetResult();    
 
-ParallelForExperiment.ParallelFor();
+//--ParallelForExperiment.ParallelFor();
+//--ParallelForExperiment.ParalleForInActionPerformance();
+
+ParallelForExperiment.ParrellelForInActionDegreeofParallelism();
 
 Console.ReadLine();
 

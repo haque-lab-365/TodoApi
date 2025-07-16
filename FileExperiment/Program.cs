@@ -11,6 +11,8 @@ Console.WriteLine("Hello, World!");
 
 //--string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "SampleData.txt");
 
+
+/*
 string currentDirectory = Directory.GetCurrentDirectory();
 string? parentDirectory = Directory.GetParent(currentDirectory)?.Parent?.Parent?.FullName;
 
@@ -24,4 +26,10 @@ if (parentDirectory == null)
 string filePath = Path.Combine(parentDirectory, "SampleData.txt");
 
 FileManager.ReadFile(filePath);
+*/
+
+//--IOTasker.CreateFile();
+IOTasker.ReadContentFromFile();
+
+
 Console.ReadLine();

@@ -40,6 +40,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileExperiment", "FileExper
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiscExperiment", "MiscExperiment\MiscExperiment.csproj", "{349D877B-1506-4FCD-AB2C-706357A9DBBB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLServerConnection", "SQLServerConnection\SQLServerConnection.csproj", "{B9DDD290-F601-41AA-8C3D-0D4BA45C5AF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADONet", "ADONet\ADONet.csproj", "{77C1D041-7C63-4809-8236-50C35E412B8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -110,6 +114,14 @@ Global
 		{349D877B-1506-4FCD-AB2C-706357A9DBBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{349D877B-1506-4FCD-AB2C-706357A9DBBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{349D877B-1506-4FCD-AB2C-706357A9DBBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9DDD290-F601-41AA-8C3D-0D4BA45C5AF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9DDD290-F601-41AA-8C3D-0D4BA45C5AF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9DDD290-F601-41AA-8C3D-0D4BA45C5AF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9DDD290-F601-41AA-8C3D-0D4BA45C5AF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77C1D041-7C63-4809-8236-50C35E412B8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77C1D041-7C63-4809-8236-50C35E412B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77C1D041-7C63-4809-8236-50C35E412B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77C1D041-7C63-4809-8236-50C35E412B8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
